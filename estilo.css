@@ -11,6 +11,7 @@
     --white: white;
     --black:black;
 }
+
 header section{
     background-image: url(./img/info.jpg);
     height:8rem;
@@ -18,12 +19,41 @@ header section{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 header section h2{
     font-size: 3rem;
     color: white;
     text-align: center;
     margin-top: 0;
+}
+
+header h1 {
+    color: var(--white);
+    text-align: center;
+    text-shadow: 1.5px 1px var(--black);
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary);
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+header nav ul li {
+    padding: 0.2rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: x-large;
 }
 
 main.inicio div {
@@ -58,14 +88,68 @@ footer p{
 
 }
 table tr th, table tr td{
-    border: 0.1rem solid var(--black);
+    border: 0.15rem solid var(--black);
     padding: 0.3rem;
-    border-collapse: collapse;
+    
 }
 table{
+    border-collapse: collapse;
     margin: auto;
     margin-bottom: 3rem;
     table-layout: fixed ;
 }
 
-
+/* Âncora */
+#topo {
+    overflow-y: hidden;
+}
+section {
+    margin: 0.5rem;
+    height: 100vh;
+}
+section ol li {
+    margin: 1rem;
+}
+section ol li a {
+    text-decoration: none;
+    color: var(--black);
+}
+#resposta1 a {
+    text-decoration: none;
+    color: var(--black);
+}
+#resposta2 a {
+    text-decoration: none;
+    color: var(--black);
+}
+#resposta3 a {
+    text-decoration: none;
+    color: var(--black);
+}
+#resposta4 a {
+    text-decoration: none;
+    color: var(--black);
+}
+#resposta5 a {
+    text-decoration: none;
+    color: var(--black);
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+form div {
+    margin: auto 1rem;
+}
+form button {
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 10rem;
+    padding: 1rem;
+    margin-bottom: 0.3rem;
+}
+div h3 {
+    font-weight: bolder;
+    font-size: x-large;
+}

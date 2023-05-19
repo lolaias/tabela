@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./estilo.css" />
+    <title>Contato</title>
 </head>
+
 <body>
-    
+    <header>
+        <section>
+            <h2>CEFET-MG CAMPUS Varginha - Curso Técnico</h2>
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="curso.html">Curso</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Contato</legend>
+            <div>
+                <p> Nome:
+                    <input type="text" name="texto" placeholder="João"><br />
+                </p>
+                <p> E-mail:
+                    <input type="email" name="email" placeholder="name@email"><br />
+                </p>
+                <p>
+                    <label for="sexo"> Masculino </label>
+                    <input type="radio" name="sexo" id="masc" value="masc">
+
+                    <label for="sexo"> Feminino </label>
+                    <input type="radio" name="sexo" id="fem" value="fem">
+                </p>
+                <p>
+                    <label for="estado">Estado/Cidade</label>
+                    <select name="estado" id="">
+                        <option value=""></option>
+                        <option value="">AC</option>
+                        <option value="">AL</option>
+                        <option value="">AP</option>
+                        <option value="">AM</option>
+                        <option value="">BA</option>
+                        <option value="">CE</option>
+                        <option value="">DF</option>
+                        <option value="">ES</option>
+                        <option value="">GO</option>
+                        <option value="">MA</option>
+                        <option value="">MT</option>
+                        <option value="">MS</option>
+                        <option value="">MG</option>
+                        <option value="">PA</option>
+                        <option value="">PB</option>
+                        <option value="">PR</option>
+                        <option value="">PE</option>
+                        <option value="">PI</option>
+                        <option value="">RJ</option>
+                        <option value="">RN</option>
+                        <option value="">RS</option>
+                        <option value="">RO</option>
+                        <option value="">RR</option>
+                        <option value="">SC</option>
+                        <option value="">SP</option>
+                        <option value="">SE</option>
+                        <option value="">TO</option>
+                    </select>
+                    <input type="text" name="cidade" placeholder="Varginha"><br />
+                </p>
+                <p>Selecione um arquivo
+                    <input type="file" name="file" placeholder="Varginha"><br />
+                </p>
+                <p>
+                    Sugestões
+                    <br>
+                    <textarea name="sug" id="sug" cols="50" rows="10" required></textarea>
+                </p>
+                <button type="submit">Enviar</button>
+                <button type="submit">Limpar</button>
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <p>
+            © copyleft
+        </p>
+    </footer>
 </body>
+
 </html>
